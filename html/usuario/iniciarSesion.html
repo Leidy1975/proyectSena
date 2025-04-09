@@ -8,7 +8,7 @@
 </head>
 <body>
     <form action="../../php/usuario/iniciarSesion.php" method="POST">
-        <h2>Inicia Sesion</h2>
+        <h2>Inicia Sesión</h2>
         <p>Ingresa los datos solicitados</p>
 
         <div class="input-wrapper">
@@ -21,9 +21,11 @@
             <img class="input-icon" src="../../css/img/email.svg" alt="">
         </div>
 
-        <p>¿No estás registrado? <a href="../usuario/registrarUsuario.html">Regístrate aquí</a></p>
+        <p>¿No estás registrado? <a href="/html/usuario/registrarUsuario.html">Regístrate aquí</a></p>
 
-        <input type="submit" value="Ingresar">
+        <input type="submit" value="Ingresar" form="formu" onclick="return val_usuario();">
     </form>
+
+    <a href="../usuario/menuPrincipal.html"></a>
 </body>
 </html>

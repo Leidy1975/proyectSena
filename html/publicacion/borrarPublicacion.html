@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Borrar Publicacion | EmPluc</title>
+    <link rel="Shortcut Icon" type="image/x-icon" href="../../css/img/tienda.png" />
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+<body>
+    <form action="../../php/publicacion/borrarPublicacion.php" method="POST">
+        <h2>Borrar Publicacion</h2>
+        <p>Ingresa los datos solicitados</p>
+
+        <div class="input-wrapper">
+            <input type="datetime-local" id="fechaCreacion" name="fechaCreacion" placeholder="Fecha Creacion" required>
+            <img class="input-icon" src="../../css/img/calendario.png" alt="">
+        </div>
+
+        <div class="input-wrapper">
+            <input type="text" id="autor" name="autor" placeholder="Autor" required>
+            <img class="input-icon" src="../../css/img/name.svg" alt="">
+        </div>
+
+        <input type="submit" name="borrar" value="Borrar">
+    </form>
+</body>
+</html>
