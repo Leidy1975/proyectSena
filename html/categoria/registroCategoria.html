@@ -1,29 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Registro de Categoría</title>
+    <meta charset="UTF-8">
+    <title>Registro Categoria - EmPluc</title>
+    <link rel="stylesheet" href="../../css/estilos.css">
 </head>
 <body>
-    <h2>Registro de Categoría</h2>
 
-    <form action="/php/categoria.php" method="POST">
-        <label for="id_categoria">ID Categoría:</label><br>
-        <input type="number" id="id_categoria" name="IdCategoria" required><br><br>
+    <form action="../../php/categoria/registroCategoria.php" method="POST">
+        <h2>Bienvenido a Categoria</h2>
+        <p>Registra la Categoria</p>
 
-        <label for="nombre">Nombre:</label><br>
-        <input type="text" id="nombre" name="Nombre" required><br><br>
+        <div class="input-wrapper">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+            <img class="input-icon" src="../../css/img/categoria.png" alt="">
+        </div>
 
-        <label for="descripcion">Descripción:</label><br>
-        <input type="text" id="descripcion" name="Descripcion" required><br><br>
+        <div class="input-wrapper">
+            <input type="text" id="descripcion" name="descripcion" placeholder="Descripcion" required>
+            <img class="input-icon" src="../../css/img/descripcion.png" alt="">
+        </div>
 
-        <label for="fecha_creacion">Fecha de Creación:</label><br>
-        <input type="date" id="fecha_creacion" name="FechaCreacion" required><br><br>
+        <div class="input-wrapper">
+            <input type="datetime-local" id="fechaCreacion" name="fechaCreacion" placeholder="Fecha Creacion" required>
+            <img class="input-icon" src="../../css/img/calendario.png" alt="">
+        </div>
 
-        <label for="estado">Estado:</label><br>
-        <select id="estado" name="Estado" required>
-            <option value="">Selecciona una opción</option>
-            <option value="Activo">Activo</option>
-            <option value="Inactivo">Inactivo</option>
+        <select id="rol" name="rol" required>
+            <option value="" disabled selected>Selecciona un estado</option>
+            <option value="Emprendedor">Activo</option>
+            <option value="Administrador">Inactivo</option>
         </select><br><br>
 
         <input type="submit" value="Registrar Categoría">

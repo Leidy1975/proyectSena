@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro Categoria - EmPluc</title>
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+<body>
+
+    <form action="../../php/publicacion/registrarPublicacion.php" method="POST">
+        <h2>Bienvenido a Publicacion</h2>
+        <p>Registra tu Publicacion</p>
+
+        <div class="input-wrapper">
+            <input type="datetime-local" id="fechaCreacion" name="fechaCreacion" placeholder="Fecha Creacion" required>
+            <img class="input-icon" src="../../css/img/calendario.png" alt="">
+        </div>
+
+        <div class="input-wrapper">
+            <input type="text" id="titulo" name="titulo" placeholder="Titulo" required>
+            <img class="input-icon" src="../../css/img/titulo.png" alt="">
+        </div>
+
+        <div class="input-wrapper">
+            <input type="text" id="autor" name="autor" placeholder="Autor" required>
+            <img class="input-icon" src="../../css/img/name.svg" alt="">
+        </div>
+
+        <div class="input-wrapper">
+            <input type="text" id="descripcion" name="descripcion" placeholder="Descripcion" required>
+            <img class="input-icon" src="../../css/img/descripcion.png" alt="">
+        </div>
+
+        <div class="input-wrapper">
+            <input type="file" id="fotos" name="fotos" placeholder="Fotos" required>
+            <img class="input-icon" src="../../css/img/fotos.png" alt="">
+        </div>
+
+        <input type="submit" value="Registrar publicacion">
+    </form>
+</body>
+</html>

@@ -1,7 +1,7 @@
 <?php
 require_once 'conexion.php';
 
-class RegistrarUsuario {
+class usuario {
     private $conn;
     private $nombre;
     private $apellido;
@@ -68,7 +68,7 @@ $conn = Conectar::conectar();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
-        $usuario = new RegistrarUsuario($conn);
+        $usuario = new usuario ($conn);
         $usuario->setNombre($_POST['nombre']);
         $usuario->setApellido($_POST['apellido']);
         $usuario->setCorreo($_POST['correo']);

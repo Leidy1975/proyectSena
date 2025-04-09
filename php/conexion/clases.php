@@ -1,6 +1,6 @@
 <?php
 require 'conexion.php';
-abstract class Usuario {
+abstract class RegistrarUsuario {
     protected $nombre;
     protected $apellido;
     protected $celular;
