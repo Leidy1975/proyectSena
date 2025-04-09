@@ -2,6 +2,8 @@
 require_once 'conexion.php';
 session_start();
 
+/*ESTO ES EL EJEMPLO DE LA PROFEEEEEE*/
+
 class IniciarSesion {
     private $conn;
     private $correo;

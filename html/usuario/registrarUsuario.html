@@ -2,14 +2,15 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Registro de Usuario - EmPluc</title>
+    <title>Usuario | EmPluc</title>
+    <link rel="Shortcut Icon" type="image/x-icon" href="../../css/img/tienda.png" />
     <link rel="stylesheet" href="../../css/estilos.css">
 </head>
 <body>
 
     <form action="../../php/usuario/registrarUsuario.php" method="POST">
-        <h2>Bienvenido a EmPluc</h2>
-        <p>Ingresa tus datos de registro</p>
+        <h2>Registrar Usuario</h2>
+        <p>Ingresa los datos solicitados</p>
     
         <div class="input-wrapper">
             <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
@@ -46,7 +47,6 @@
             <img class="input-icon" src="../../css/img/password.svg" alt="">
         </div>
 
-        <label for="rol">Tipo de Usuario:</label><br>
         <select id="rol" name="rol" required>
             <option value="" disabled selected>Selecciona un rol</option>
             <option value="Emprendedor">Emprendedor</option>

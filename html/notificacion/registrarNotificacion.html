@@ -1,31 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>formulario de notificación</title>
+    <meta charset="UTF-8">
+    <title>Notificacion | EmPluc</title>
+    <link rel="Shortcut Icon" type="image/x-icon" href="../../css/img/tienda.png" />
+    <link rel="stylesheet" href="../../css/estilos.css">
 </head>
 <body>
-    <h1>Crear notificación</h1>
 
-    <form action="Notificación.php" method="POST">
-        <label for="destinatario">Destinatario:</label><br>
-        <input type="text" id="destinatario" name="destinatario" required><br><br>
+    <form action="../../php/notificacion/registrarNotificacion.php" method="POST">
+        <h2>Registrar Notificacion</h2>
+        <p>Ingresa los datos solicitados</p>
 
-        <label for="asunto">Asunto:</label><br>
-        <input type="text" id="asunto" name="asunto" required><br><br>
+        <div class="input-wrapper">
+            <input type="datetime-local" id="fechaCreacion" name="fechaCreacion" placeholder="Fecha Creacion" required>
+            <img class="input-icon" src="../../css/img/calendario.png" alt="">
+        </div>
 
-        <label for="mensaje">Mensaje:</label><br>
-        <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+        <div class="input-wrapper">
+            <input type="datetime-local" id="fechaRespuesta" name="fechaRespuesta" placeholder="Fecha Respuesta" required>
+            <img class="input-icon" src="../../css/img/calendario.png" alt="">
+        </div>
 
-        <label for="remitente">Remitente:</label><br>
-        <input type="text" id="remitente" name="remitente" required><br><br>
+        <div class="input-wrapper">
+            <input type="text" id="descripcion" name="descripcion" placeholder="Descripcion" required>
+            <img class="input-icon" src="../../css/img/descripcion.png" alt="">
+        </div>
 
-        <label for="fecha_creacion">Fecha de Creación:</label><br>
-        <input type="datetime-local" id="fecha_creacion" name="fecha_creacion" required><br><br>
-
-        <label for="fecha_respuesta">Fecha de Respuesta:</label><br>
-        <input type="datetime-local" id="fecha_respuesta" name="fecha_respuesta"><br><br>
-
-        <button type="submit">Enviar notificación</button>
+        <input type="submit" value="Registrar Notificacion">
     </form>
 </body>
 </html>
