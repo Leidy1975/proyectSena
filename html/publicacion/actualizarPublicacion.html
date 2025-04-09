@@ -8,37 +8,41 @@
 </head>
 <body>
 
-    <form action="../../php/publicacion/actualizarPublicacion.php" method="POST">
+    <form action="../../php/publicacion/registrarPublicacion.php" method="POST">
         <h2>Actualizar Publicación</h2>
         <p>Ingresa los datos solicitados</p>
-        
+
         <div class="input-wrapper">
-            <input type="datetime-local" id="fechaCreacion" name="fechaCreacion" placeholder="Nueva Fecha Creacion" required>
+            <input type="text" id="id" name="id" placeholder="Ingresa el Id" required>
+            <img class="input-icon" src="../../css/img/id.png" alt="">
+        </div>
+
+        <div class="input-wrapper">
+            <input type="datetime-local" id="fechaCreacion" name="fechaCreacion" placeholder="Nueva fecha creacion" required>
             <img class="input-icon" src="../../css/img/calendario.png" alt="">
         </div>
 
         <div class="input-wrapper">
-            <input type="text" id="titulo" name="titulo" placeholder="Nueva Titulo" required>
+            <input type="text" id="titulo" name="titulo" placeholder="Nuevo titulo" required>
             <img class="input-icon" src="../../css/img/titulo.png" alt="">
         </div>
 
         <div class="input-wrapper">
-            <input type="text" id="autor" name="autor" placeholder="Nueva Autor" required>
+            <input type="text" id="autor" name="autor" placeholder="Nuevo autor" required>
             <img class="input-icon" src="../../css/img/name.svg" alt="">
         </div>
 
         <div class="input-wrapper">
-            <input type="text" id="descripcion" name="descripcion" placeholder="Nueva Descripcion" required>
+            <input type="text" id="descripcion" name="descripcion" placeholder="Nueva descripcion" required>
             <img class="input-icon" src="../../css/img/descripcion.png" alt="">
         </div>
 
         <div class="input-wrapper">
-            <input type="file" id="fotos" name="fotos" placeholder="Nueva Fotos" required>
+            <input type="file" id="fotos" name="fotos" placeholder="Nuevas fotos" required>
             <img class="input-icon" src="../../css/img/fotos.png" alt="">
         </div>
 
-        <input type="submit" name="Actualizar" value="Actualizar">
+        <input type="submit" value="Actualizar" value="Actualizar">
     </form>
-
 </body>
 </html>

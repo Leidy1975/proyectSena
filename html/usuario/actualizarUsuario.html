@@ -11,6 +11,11 @@
     <form action="../../php/usuario/actualizarUsuario.php" method="POST">
         <h2>Actualizar Usuario</h2>
         <p>Ingresa los datos solicitados</p>
+
+        <div class="input-wrapper">
+            <input type="text" id="id" name="id" placeholder="Ingresa el Id" required>
+            <img class="input-icon" src="../../css/img/id.png" alt="">
+        </div>
     
         <div class="input-wrapper">
             <input type="text" id="nombre" name="nombre" placeholder="Nuevo Nombre" required>
@@ -46,13 +51,6 @@
             <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirmar Contraseña" required>
             <img class="input-icon" src="../../css/img/password.svg" alt="">
         </div>
-
-        <select id="rol" name="rol" required>
-            <option value="" disabled selected>Selecciona un rol</option>
-            <option value="Emprendedor">Emprendedor</option>
-            <option value="Administrador">Explorador</option>
-            <option value="Administrador">Administrador</option>
-        </select><br><br>
 
         <input type="submit" name="actualizar" value="Actualizar">
     </form>
