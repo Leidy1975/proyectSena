@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Publicación | EmPluc</title>
+    <link rel="Shortcut Icon" type="image/x-icon" href="../../css/img/tienda.png" />
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+<body>
+
+    <form action="../../php/publicacion/actualizarPublicacion.php" method="POST">
+        <h2>Actualizar Publicación</h2>
+        <p>Ingresa los datos solicitados</p>
+        
+        <div class="input-wrapper">
+            <input type="datetime-local" id="fechaCreacion" name="fechaCreacion" placeholder="Nueva Fecha Creacion" required>
+            <img class="input-icon" src="../../css/img/calendario.png" alt="">
+        </div>
+
+        <div class="input-wrapper">
+            <input type="text" id="titulo" name="titulo" placeholder="Nueva Titulo" required>
+            <img class="input-icon" src="../../css/img/titulo.png" alt="">
+        </div>
+
+        <div class="input-wrapper">
+            <input type="text" id="autor" name="autor" placeholder="Nueva Autor" required>
+            <img class="input-icon" src="../../css/img/name.svg" alt="">
+        </div>
+
+        <div class="input-wrapper">
+            <input type="text" id="descripcion" name="descripcion" placeholder="Nueva Descripcion" required>
+            <img class="input-icon" src="../../css/img/descripcion.png" alt="">
+        </div>
+
+        <div class="input-wrapper">
+            <input type="file" id="fotos" name="fotos" placeholder="Nueva Fotos" required>
+            <img class="input-icon" src="../../css/img/fotos.png" alt="">
+        </div>
+
+        <input type="submit" name="Actualizar" value="Actualizar">
+    </form>
+
+</body>
+</html>

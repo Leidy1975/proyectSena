@@ -1,42 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Registro de Negocio</title>
+    <meta charset="UTF-8">
+    <title>Negocio | EmPluc</title>
+    <link rel="Shortcut Icon" type="image/x-icon" href="../../css/img/tienda.png" />
+    <link rel="stylesheet" href="../../css/estilos.css">
 </head>
 <body>
-    <h2>Registro de Negocio</h2>
-    <form action="Negocio.php" method="POST" enctype="multipart/form-data">
-        <label>NIT:</label>
-        <input type="number" name="NIT" required><br>
-        
-        <label>Nombre:</label>
-        <input type="text" name="Nombre" required><br>
-        
-        <label>Dirección:</label>
-        <input type="text" name="Direccion" required><br>
-        
-        <label>Celular:</label>
-        <input type="number" name="Celular" required><br>
-        
-        <label>Logo:</label>
-        <input type="file" name="Logo" accept="image/*"><br>
-        
-        <label>Descripción:</label>
-        <input type="text" name="Descripcion" required><br>
-        
-        <label>Video:</label>
-        <input type="file" name="Video" accept="video/*"><br>
-        
-        <label>Redes Sociales:</label>
-        <input type="text" name="RedesSociales"><br>
-        
-        <label>Fecha de Creación:</label>
-        <input type="datetime-local" name="FechaCreacion" required><br>
-        
-        <label>ID de Usuario:</label>
-        <input type="number" name="IdUsuario" required><br>
-        
-        <input type="submit" value="Registrar">
+    <form action="../../php/negocio/registrarNegocio.php" method="POST">
+        <h2>Registrar Negocio</h2>
+        <p>Ingresa los datos solicitados</p>
+
+        <div class="input-wrapper">
+            <input type="number" id="NIT" name="NIT" placeholder="NIT" required>
+            <img class="input-icon" src="../../css/img/numeral.png" alt="">
+        </div>
+
+        <div class="input-wrapper">
+            <input type="file" id="logo" name="logo" placeholder="Logo" required>
+            <img class="input-icon" src="../../css/img/fotos.png" alt="">
+        </div>
+
+        <div class="input-wrapper">
+            <input type="text" id="descripcion" name="descripcion" placeholder="Descripcion" required>
+            <img class="input-icon" src="../../css/img/descripcion.png" alt="">
+        </div>
+
+        <div class="input-wrapper">
+            <input type="file" id="video" name="video" placeholder="Video" required>
+            <img class="input-icon" src="../../css/img/fotos.png" alt="">
+        </div>
+
+        <div class="input-wrapper">
+            <input type="text" id="redesSociales" name="redesSociales" placeholder="Redes sociales" required>
+            <img class="input-icon" src="../../css/img/instagram.png" alt="">
+        </div>
+
+        <input type="submit" value="Registrar" value="Registrar">
     </form>
 </body>
 </html>

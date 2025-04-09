@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Categoria - EmPluc</title>
+    <link rel="Shortcut Icon" type="image/x-icon" href="../../css/img/tienda.png" />
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+<body>
+
+    <form action="../../php/categoria/registroCategoria.php" method="POST">
+        <h2>Actualizar Categoria</h2>
+        <p>Ingresa los datos solicitados</p>
+
+        <div class="input-wrapper">
+            <input type="text" id="nombre" name="nombre" placeholder="Nuevo nombre" required>
+            <img class="input-icon" src="../../css/img/categoria.png" alt="">
+        </div>
+
+        <div class="input-wrapper">
+            <input type="text" id="descripcion" name="descripcion" placeholder="Nuevo descripcion" required>
+            <img class="input-icon" src="../../css/img/descripcion.png" alt="">
+        </div>
+
+        <div class="input-wrapper">
+            <input type="datetime-local" id="fechaCreacion" name="fechaCreacion" placeholder="Nuevo fecha creacion" required>
+            <img class="input-icon" src="../../css/img/calendario.png" alt="">
+        </div>
+
+        <select id="rol" name="rol" required>
+            <option value="" disabled selected>Selecciona un estado</option>
+            <option value="Emprendedor">Activo</option>
+            <option value="Administrador">Inactivo</option>
+        </select><br><br>
+
+        <input type="submit" value="Actualizar" value="Actualizar">
+    </form>
+</body>
+</html>

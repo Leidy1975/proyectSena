@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Negocio | EmPluc</title>
+    <link rel="Shortcut Icon" type="image/x-icon" href="../../css/img/tienda.png" />
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+<body>
+    <form action="../../php/negocio/registrarNegocio.php" method="POST">
+        <h2>Actualizar Negocio</h2>
+        <p>Ingresa los datos solicitados</p>
+
+        <div class="input-wrapper">
+            <input type="number" id="NIT" name="NIT" placeholder="Nuevo NIT" required>
+            <img class="input-icon" src="../../css/img/numeral.png" alt="">
+        </div>
+
+        <div class="input-wrapper">
+            <input type="file" id="logo" name="logo" placeholder="Nuevo logo" required>
+            <img class="input-icon" src="../../css/img/fotos.png" alt="">
+        </div>
+
+        <div class="input-wrapper">
+            <input type="text" id="descripcion" name="descripcion" placeholder="Nuevo descripcion" required>
+            <img class="input-icon" src="../../css/img/descripcion.png" alt="">
+        </div>
+
+        <div class="input-wrapper">
+            <input type="file" id="video" name="video" placeholder="Nuevo video" required>
+            <img class="input-icon" src="../../css/img/fotos.png" alt="">
+        </div>
+
+        <div class="input-wrapper">
+            <input type="text" id="redesSociales" name="redesSociales" placeholder="Nuevo redes sociales" required>
+            <img class="input-icon" src="../../css/img/instagram.png" alt="">
+        </div>
+
+        <input type="submit" value="Actualizar" value="Actualizar">
+    </form>
+</body>
+</html>

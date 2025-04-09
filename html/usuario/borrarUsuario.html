@@ -2,38 +2,21 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Borrar Usuario | EmPluc</title>
+    <title>Usuario | EmPluc</title>
     <link rel="Shortcut Icon" type="image/x-icon" href="../../css/img/tienda.png" />
     <link rel="stylesheet" href="../../css/estilos.css">
 </head>
 <body>
     <form action="../../php/usuario/borrarUsuario.php" method="POST">
-        <h2>Borrar Usuario</h2>
+        <h2>Eliminar Usuario</h2>
         <p>Ingresa los datos solicitados</p>
 
         <div class="input-wrapper">
-            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
-            <img class="input-icon" src="../../css/img/name.svg" alt="">
+            <input type="text" id="id" name="id" placeholder="Ingresa el Id" required>
+            <img class="input-icon" src="../../css/img/id.png" alt="">
         </div>
 
-        <div class="input-wrapper">
-            <input type="password" id="password" name="password" placeholder="Contraseña" required>
-            <img class="input-icon" src="../../css/img/password.svg" alt="">
-        </div>
-
-        <div class="input-wrapper">
-            <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirmar Contraseña" required>
-            <img class="input-icon" src="../../css/img/password.svg" alt="">
-        </div>
-
-        <select id="rol" name="rol" required>
-            <option value="" disabled selected>Selecciona un rol</option>
-            <option value="Emprendedor">Emprendedor</option>
-            <option value="Administrador">Explorador</option>
-            <option value="Administrador">Administrador</option>
-        </select><br><br>
-
-        <input type="submit" name="borrar" value="Borrar">
+        <input type="submit" name="eliminar" value="Eliminar">
     </form>
 </body>
 </html>
