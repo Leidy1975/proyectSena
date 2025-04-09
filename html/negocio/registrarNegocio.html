@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro de Negocio</title>
+</head>
+<body>
+    <h2>Registro de Negocio</h2>
+    <form action="Negocio.php" method="POST" enctype="multipart/form-data">
+        <label>NIT:</label>
+        <input type="number" name="NIT" required><br>
+        
+        <label>Nombre:</label>
+        <input type="text" name="Nombre" required><br>
+        
+        <label>Dirección:</label>
+        <input type="text" name="Direccion" required><br>
+        
+        <label>Celular:</label>
+        <input type="number" name="Celular" required><br>
+        
+        <label>Logo:</label>
+        <input type="file" name="Logo" accept="image/*"><br>
+        
+        <label>Descripción:</label>
+        <input type="text" name="Descripcion" required><br>
+        
+        <label>Video:</label>
+        <input type="file" name="Video" accept="video/*"><br>
+        
+        <label>Redes Sociales:</label>
+        <input type="text" name="RedesSociales"><br>
+        
+        <label>Fecha de Creación:</label>
+        <input type="datetime-local" name="FechaCreacion" required><br>
+        
+        <label>ID de Usuario:</label>
+        <input type="number" name="IdUsuario" required><br>
+        
+        <input type="submit" value="Registrar">
+    </form>
+</body>
+</html>
