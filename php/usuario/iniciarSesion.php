@@ -2,7 +2,7 @@
 require_once 'conexion.php';
 session_start();
 
-class Login {
+class IniciarSesion {
     private $conn;
     private $correo;
     private $contraseña;
@@ -54,7 +54,7 @@ class Login {
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $login = new Login($conn);
+    $login = new IniciarSesion($conn);
     $login->setCorreo($_POST['Correo']);
     $login->setContraseña($_POST['Password']);
     $login->setTipoUsuario($_POST['TipoUsuario']);
