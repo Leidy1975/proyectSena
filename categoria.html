@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro de Categoría</title>
+</head>
+<body>
+    <h2>Registro de Categoría</h2>
+
+    <form action="categoria.php" method="POST">
+        <label for="id_categoria">ID Categoría:</label><br>
+        <input type="number" id="id_categoria" name="IdCategoria" required><br><br>
+
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="Nombre" required><br><br>
+
+        <label for="descripcion">Descripción:</label><br>
+        <input type="text" id="descripcion" name="Descripcion" required><br><br>
+
+        <label for="fecha_creacion">Fecha de Creación:</label><br>
+        <input type="date" id="fecha_creacion" name="FechaCreacion" required><br><br>
+
+        <label for="estado">Estado:</label><br>
+        <select id="estado" name="Estado" required>
+            <option value="">Selecciona una opción</option>
+            <option value="Activo">Activo</option>
+            <option value="Inactivo">Inactivo</option>
+        </select><br><br>
+
+        <input type="submit" value="Registrar Categoría">
+    </form>
+</body>
+</html>
